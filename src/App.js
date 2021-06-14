@@ -1,24 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import { Header } from './Header/Header';
+import { Characters } from './Characters/Characters';
+import { Character } from './Character/Character'
+import { useState } from 'react';
+
 
 function App() {
+  const [id, setId] = useState(null);
+
+  const catchId = (id) => {
+    setId(id)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header return={catchId} />
+      {id === null ? <Characters catch={catchId} /> : <Character id={id} />}
+    </>
   );
 }
 

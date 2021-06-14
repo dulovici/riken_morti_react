@@ -1,0 +1,14 @@
+
+.hdr {
+    height: 30px;
+    background-color: rgb(43, 65, 94);
+    display: flex;
+    align-items: center;
+}
+
+.hdr code {
+    padding-left: 20px;
+    font-size: 22px;
+    color: antiquewhite;
+    cursor: pointer;
+}

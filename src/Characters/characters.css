@@ -1,0 +1,40 @@
+
+
+.cards {
+    width: 1300px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 304px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    background-color: antiquewhite;
+    border: 2px solid black;
+}
+.card img {
+    width: 300px;
+}
+.card h3 {
+    text-align: center;
+    margin-bottom: 5px;
+    
+}
+.card button {
+    width: 200px;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    background-color: rgb(10, 148, 79);
+    color: honeydew;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card button.liked {
+    background-color: whitesmoke;
+    color: rgb(66, 66, 66);
+}
