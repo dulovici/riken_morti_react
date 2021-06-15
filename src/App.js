@@ -15,7 +15,9 @@ function App() {
   return (
     <>
       <Header return={catchId} />
-      {id === null ? <Characters catch={catchId} /> : <Character id={id} />}
+      {id === null
+        ? <Characters catch={catchId} />
+        : <Character id={id} />}
     </>
   );
 }
