@@ -16,15 +16,7 @@ export const Card = (props) => {
 
 
 
-// {cards.map(e => {
-//     return (
-//         <div key={e.id} className='card' >
-//             <img src={e.image} alt='character-img' onClick={() => props.catch(e.id)} />
-//             <h3>{e.name}</h3>
-//             <button className={`${active ? 'liked' : ''}`} onClick={() => setActive(!active)}>Like</button>
-//         </div>
-//     )
-// })}
+
 
 
 
